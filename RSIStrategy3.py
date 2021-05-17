@@ -18,7 +18,7 @@ logging.basicConfig(
 def get_strategy():
     return RSIStrategy3
 
-def dailyReturn(values, n):
+def dailyReturn(values):
     s1 = pd.Series(values)
     s2 = pd.Series(values)
     return (s2.shift(-1) - s1) / s1
